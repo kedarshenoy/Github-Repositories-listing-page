@@ -14,7 +14,7 @@ async function fetchRepositories() {
     user.innerHTML='';
     repositoriesContainer.innerHTML = '';
     paginationContainer.innerHTML = '';
-
+ 
     try {
         const response = await fetch(`https://api.github.com/users/${username}/repos`);
         const data = await response.json();
